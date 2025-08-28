@@ -23,4 +23,17 @@
     updateCountdown();
     // update every second
     setInterval(updateCountdown, 1000);
+
+    // Detect mobile platform
+    const ua = navigator.userAgent || navigator.vendor || window.opera;
+    console.log(ua)
+    console.log(navigator.platform)
+    console.log(navigator.maxTouchPoints)
+    const isAndroid = /Android/i.test(ua);
+    const isIOS = (/iPad|iPhone|iPod/.test(ua) || navigator.platform === 'MacIntel');
+    const deviceOS = isAndroid ? 'android' : (isIOS ? 'ios' : 'other');
+    // Example: console.log('Device OS:', deviceOS);
+
+
+    document.getElementById('download-dots').setAttribute('href', isIOS ? 'https://apps.apple.com/es/app/dots-memories-%C3%A1lbum-de-fotos/id6449039420' : 'https://play.google.com/store/apps/details?id=social.onelife&hl=es&pli=1')
 })();
