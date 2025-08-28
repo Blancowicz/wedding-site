@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <style type="text/css"><![CDATA[
+      @font-face {
+        font-family: 'Fraunces';
+        src: url('/fonts/Fraunces-Regular.woff2') format('woff2'),
+             local('Fraunces Regular'), local('Fraunces-Regular');
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+      }
+      .bg { fill: #d2b4a2; }
+      .txt {
+        fill: #853117;
+        font-family: 'Fraunces', serif;
+        font-weight: 400;
+        font-size: 230px; /* smaller to avoid clipping */
+        letter-spacing: 4px; /* slightly reduced */
+        text-anchor: middle;
+        dominant-baseline: middle;
+        text-rendering: geometricPrecision;
+      }
+    ]]></style>
+  </defs>
+  <!-- generous padding via smaller font-size and y offset (52%) -->
+  <rect class="bg" width="512" height="512"/>
+  <text class="txt" x="50%" y="52%">A+O</text>
+</svg>
