@@ -100,6 +100,16 @@
             </svg>
 
             <h1 class="names"><span class="aina">Aina</span><span class="divider">+</span><span class="oscar">Óscar</span></h1>
+
+            <div id="custom-audio">
+                <audio id="background-audio">
+                    <source src="media/sng.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <button id="audio-button" onclick="toggleAudio()">▶</button>
+                <input type="range" id="track-timeline" value="0" max="100" step="1" oninput="setAudioTime()" />
+            </div>
+
             <div class="hero-date">14 febrer 2026</div>
             <div class="hero-place">Mas d'Alzedo</div>
 
@@ -301,11 +311,11 @@
 
     <!-- About/story section with photo grid -->
     <section class="about">
-        <div>
+        <!-- <div>
             <p>Després de més d'una dècada junts, fem un pas més en la nostra història.<br><br/>
             Sempre hem anat de la mà, sent el millor suport i company l'un per a l'altre. I hem compartit somnis, aventures i records infinits. Ah, i no ens oblidem que som una família de tres! El Whisky és l'alegria de casa i ens acompanya en el camí.<br><br/>
             Ara, amb més il·lusió que mai, celebrem un nou capítol junts.</p>
-        </div>
+        </div> -->
 
         <div class="photo-grid">
             <!-- grid of couple images -->
@@ -338,11 +348,13 @@
 
     <!-- Information: transport and gift -->
     <section class="info-two">
-        <div class="info-card transport">
-            <h3>Transport</h3>
-            <p>L'autobús eixirà al matí i tornarà al voltant de mitjanit, quan acabe la festa. Per favor, fes-nos saber si el necessites al formulari d'assistència.</p>
-            <p>També estarà disponible l'aparcament privat per a aquells convidats que vinguen pel seu compte.</p>
+        <div class="info-card assistance">
+            <h3>Assistència</h3>
+            <p>Vens a la boda? Per a nosaltres és molt important que disfrutes aquest dia. Ompli el formulari sobre desplaçament, intoleràncies...</p>
+            <p class="coming-soon">Pròximament</p>
+            <button class="btn">Confirmar assistència</button>
         </div>
+
         <div class="info-card gift">
             <h3>Regal</h3>
             <p>El millor regal és que ens acompanyes… però, si vols col·laborar a fer realitat la nostra pròxima aventura junts, ací ho pots fer.</p>
@@ -354,16 +366,16 @@
 
     <!-- Assistance and photo instructions -->
     <section class="info-two">
-        <div class="info-card assistance">
-            <h3>Assistència</h3>
-            <p>Vens a la boda? Per a nosaltres és molt important que disfrutes aquest dia. Ompli el formulari sobre desplaçament, intoleràncies...</p>
-            <p class="coming-soon">Pròximament</p>
-            <button class="btn">Confirmar assistència</button>
+        <div class="info-card transport">
+            <h3>Transport</h3>
+            <p>L'autobús eixirà al matí i tornarà al voltant de mitjanit, quan acabe la festa. Per favor, fes-nos saber si el necessites al formulari d'assistència.</p>
+            <p>També estarà disponible l'aparcament privat per a aquells convidats que vinguen pel seu compte.</p>
         </div>
+
         <div class="info-card photos">
             <h3>Fotos</h3>
-            <p>No volem oblidar ni un sol minut d'aquest dia tan especial. Descarrega't l'aplicació Dots i comparteix amb nosaltres i la resta d'assistents aquells moments únics del nostre dia.</p>
-            <a class="btn" id="download-dots" href="#" target="_blank">Descarregar Dots</a>
+            <p>No volem oblidar ni un sol minut d'aquest dia tan especial. Comparteix amb nosaltres i la resta d'assistents aquells moments únics del nostre dia afegint les teues fotos al següent enllaç.</p>
+            <a class="btn" id="download-dots" href="#" target="_blank">Compartir fotos</a>
         </div>
     </section>
 
@@ -382,7 +394,7 @@
 
     <!-- Gratitude section -->
     <section class="gratitude">
-        <p>Sense vosaltres, aquesta celebració no seria el mateix.<br>Gràcies per acompanyar-nos.</p>
+        <p>Sense vosaltres, aquesta celebració <br/>no seria el mateix.<br>Gràcies per acompanyar-nos.</p>
     </section>
 
     <!-- Countdown timer and contact numbers -->
@@ -393,10 +405,10 @@
             <div class="count-item"><span id="minutes">0</span><small>Minuts</small></div>
             <div class="count-item"><span id="seconds">0</span><small>Segons</small></div>
         </div>
-        <p class="contacts">
+        <!-- <p class="contacts">
             <a href="tel:625317073">Aina&nbsp;-&nbsp;625&nbsp;31&nbsp;70&nbsp;73</a><br>
             <a href="tel:622715003">Óscar&nbsp;-&nbsp;622&nbsp;71&nbsp;50&nbsp;03</a>
-        </p>
+        </p> -->
     </section>
 
     <script src="js/script.js"></script>

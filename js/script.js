@@ -36,4 +36,39 @@
 
 
     document.getElementById('download-dots').setAttribute('href', isIOS ? 'https://apps.apple.com/es/app/dots-memories-%C3%A1lbum-de-fotos/id6449039420' : 'https://play.google.com/store/apps/details?id=social.onelife&hl=es&pli=1')
+
+    let audio = document.getElementById('background-audio');
+    let playButton = document.getElementById('audio-button');
+
+    function toggleAudio() {
+        if (audio.paused) {
+            audio.play();
+            playButton.textContent = '⏸'; // Change to pause icon
+        } else {
+            audio.pause();
+            playButton.textContent = '▶'; // Change to play icon
+        }
+    }
+    playButton.addEventListener('click', toggleAudio);
+
+    function setAudioTime() {
+        const timeline = document.getElementById('track-timeline');
+        const newTime = (timeline.value / 100) * audio.duration;
+        audio.currentTime = newTime;
+    }
+    document.getElementById('track-timeline').addEventListener('input', setAudioTime);
+
+    // Update timeline slider as audio plays
+    audio.addEventListener('timeupdate', function() {
+        const timeline = document.getElementById('track-timeline');
+        if (audio.duration) {
+            const progress = (audio.currentTime / audio.duration) * 100;
+            timeline.value = progress;
+        }
+    });
+
+    // Initialize button state based on autoplay
+    if (!audio.paused) {
+        playButton.textContent = '⏸'; // Change to pause icon
+    }
 })();
