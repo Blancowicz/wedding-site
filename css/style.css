@@ -805,3 +805,6 @@ input[type=range]:focus::-ms-fill-lower {
 input[type=range]:focus::-ms-fill-upper {
   background: #D2B4A2;
 }
+.bold {
+    font-weight: 600;
+}
