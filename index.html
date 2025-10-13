@@ -6,6 +6,7 @@
     <title>Aina + Óscar</title>
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <!-- Google fonts for elegant serif and sans-serif faces -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Cormorant+Garamond:wght@400;500;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
     <!-- Font‑Awesome for decorative icons used in the hero -->
@@ -106,7 +107,9 @@
                     <source src="media/sng.mp3" type="audio/mpeg">
                     Your browser does not support the audio element.
                 </audio>
-                <button id="audio-button" onclick="toggleAudio()">▶</button>
+                <button id="audio-button" onclick="toggleAudio()">
+                    <i class="fa-solid fa-play"></i>
+                </button>
                 <input type="range" id="track-timeline" value="0" max="100" step="1" oninput="setAudioTime()" />
             </div>
 
@@ -258,19 +261,22 @@
                 <p class="time">12:30h</p>
                 <p class="subtitle">"Lo de plorar"</p>
             </div>
-            <div class="diamond"></div>
+            <!-- <div class="diamond"></div> -->
+            <i class="fa-solid fa-star-of-life"></i>
             <div class="sched-item">
                 <h3>Còctel</h3>
                 <p class="time">14:00h</p>
                 <p class="subtitle">"Lo de brindar"</p>
             </div>
-            <div class="diamond diamond-xs"></div>
+            <!-- <div class="diamond diamond-xs"></div> -->
+             <i class="fa-solid fa-star-of-life"></i>
             <div class="sched-item">
                 <h3>Dinar</h3>
                 <p class="time">15:30h</p>
                 <p class="subtitle">"Lo de xarrar"</p>
             </div>
-            <div class="diamond"></div>
+            <!-- <div class="diamond"></div> -->
+             <i class="fa-solid fa-star-of-life"></i>
             <div class="sched-item">
                 <h3>Festival</h3>
                 <p class="time">17:30h</p>
@@ -291,15 +297,15 @@
         </div>
         <div>
             <div class="gallery">
-                <img src="images/3a8296_a7e7e3c9424b41e6b9820e87f92507b2~mv2.png" alt="Porta de Mas d'Alzedo">
-                <img src="images/3a8296_cf2a0bca9cad4b76bd2df8e451da6bd9~mv2.png" alt="Zona exterior">
-                <img src="images/3a8296_444b7e354d16468082134827df84564a~mv2.png" alt="Decoracions taula">
-                <img src="images/3a8296_d570a4004ffd4d8690c750596ad29629~mv2.png" alt="Cerimònia exterior">
-                <img src="images/3a8296_8ce2fd75ec3e4e64b63a7591e9f21e1d~mv2.png" alt="Sala decorada">
-                <img src="images/3a8296_7d74c0ed7791477aafe19a66b2f1b37b~mv2.png" alt="Pati cobert">
-                <img src="images/3a8296_7837c85754d24d56ba302ec7ca97005e~mv2.png" alt="Escala verd">
-                <img src="images/3a8296_d9cb8b84294648b08a31408caf0d8f4e~mv2.png" alt="Taula dolç">
-                <img src="images/3a8296_3280083e7f2d45a2a2edf74d908d1516~mv2.png" alt="Sala menjador">
+                <img src="images/mas/6010595362982713304.jpg" alt="Porta de Mas d'Alzedo">
+                <img src="images/mas/6010595362982713305.jpg" alt="Zona exterior">
+                <img src="images/mas/6010595362982713306.jpg" alt="Decoracions taula">
+                <img src="images/mas/6010595362982713307.jpg" alt="Cerimònia exterior">
+                <img src="images/mas/6010595362982713308.jpg" alt="Sala decorada">
+                <img src="images/mas/6010595362982713309.jpg" alt="Pati cobert">
+                <img src="images/mas/6010595362982713310.jpg" alt="Escala verd">
+                <img src="images/mas/6010595362982713311.jpg" alt="Taula dolç">
+                <img src="images/mas/6010595362982713318.jpg" alt="Sala menjador">
             </div>
         </div>
     </section>
@@ -351,8 +357,8 @@
         <div class="info-card assistance">
             <h3>Assistència</h3>
             <p>Vens a la boda? Per a nosaltres és molt important que disfrutes aquest dia. Ompli el formulari sobre desplaçament, intoleràncies...</p>
-            <p class="coming-soon">Pròximament</p>
-            <button class="btn">Confirmar assistència</button>
+
+            <a class="btn" href="/assistencia.html">Confirmar assistència</a>
         </div>
 
         <div class="info-card gift">

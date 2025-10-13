@@ -43,10 +43,10 @@
     function toggleAudio() {
         if (audio.paused) {
             audio.play();
-            playButton.textContent = '⏸'; // Change to pause icon
+            playButton.innerHTML = '<i class="fa-solid fa-pause"></i>'; // Change to pause icon
         } else {
             audio.pause();
-            playButton.textContent = '▶'; // Change to play icon
+            playButton.innerHTML = '<i class="fa-solid fa-play"></i>'; // Change to play icon
         }
     }
     playButton.addEventListener('click', toggleAudio);
@@ -69,6 +69,6 @@
 
     // Initialize button state based on autoplay
     if (!audio.paused) {
-        playButton.textContent = '⏸'; // Change to pause icon
+        playButton.textContent = '<i class="fa-solid fa-pause"></i>'; // Change to pause icon
     }
 })();
