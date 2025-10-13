@@ -67,7 +67,10 @@ html, body {
     font-weight: 300;
     font-size: 36px;
 }
-
+.top-bar a {
+    color: var(--colour-white);
+    text-decoration: none;
+}
 /* Hero section */
 .hero {
     position: relative;
