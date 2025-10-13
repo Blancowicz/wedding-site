@@ -281,6 +281,15 @@ html, body {
     font-family: 'Times New Roman', serif;
     font-size: 1.2rem;
 }
+.hidden {
+    display: none;
+}
+
+@media (max-width: 760px) {
+    .hidden {
+        display: block;
+    }
+}
 
 @media (max-width: 984px) {
     .schedule {
@@ -384,13 +393,16 @@ html, body {
     text-align: center;
     padding: 60px 20px;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .quote p {
     font-family: var(--font-serif);
     font-style: italic;
     font-weight: 600;
     font-size: clamp(2rem, 6vw, 2.4rem);
-    margin: 0;
+    margin: 0 10px;
 }
 .quote .diamond {
     padding: 0 100px;
@@ -409,7 +421,7 @@ html, body {
     .quote {
         padding: 20px;
     }
-    .quote .diamond {
+    .quote .fa-star-of-life {
         display: none;
     }
     .quote p span {
