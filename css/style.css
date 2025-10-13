@@ -633,12 +633,19 @@ html, body {
 
 /* Gratitude section */
 .gratitude {
-    background: var(--light-red);
-    color: var(--colour-white);
+    background: white;
+    color: var(--colour-primary);
     text-align: center;
     padding: 20px;
     font-family: var(--font-serif);
     font-size: 29px;
+}
+
+@media (max-width: 768px) {
+    .gratitude {
+        background-color: var(--light-red);
+        color: var(--colour-white);
+    }
 }
 
 /* Countdown section */
@@ -646,6 +653,7 @@ html, body {
     background: var(--colour-white);
     padding: 60px 15px 40px;
     text-align: center;
+    background: var(--colour-bg-light);
 }
 .countdown {
     display: flex;
