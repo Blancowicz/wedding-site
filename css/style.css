@@ -30,9 +30,9 @@
     --light-red: #a25a44;
     --colour-accent: #d2b4a2;    /* subtle accent for secondary backgrounds */
     --colour-white: #ffffff;
-    --font-serif: "Fraunces", 'Playfair Display', 'Cormorant Garamond', serif;
-    --font-sans: 'Montserrat', sans-serif;
-    --font-weight: 144;
+    --font-serif: "Barlow", "Fraunces", 'Playfair Display', 'Cormorant Garamond', serif;
+    --font-sans: "Barlow", 'Montserrat', sans-serif;
+    --font-weight: 400;
 }
 
 html, body {
