@@ -65,7 +65,7 @@ html, body {
 .top-bar h1, h2 {
     /* font-size: 0.9rem; */
     font-weight: 300;
-    font-size: 36px;
+    font-size: 34px;
 }
 .top-bar a {
     color: var(--colour-white);
@@ -112,7 +112,7 @@ html, body {
 .hero .names {
     margin: 0;
     font-family: var(--font-serif);
-    font-size: 170px;
+    font-size: 150px;
     font-weight: 400;
     padding: 120px 0 30px 0;
 }
@@ -147,13 +147,13 @@ html, body {
 .hero .hero-date {
     font-family: var(--font-serif);
     font-weight: 500;
-    font-size: 50px;
+    font-size: 45px;
     margin-top: 25px;
 }
 .hero .hero-place {
     font-family: var(--font-serif);
     font-weight: 500;
-    font-size: 50px;
+    font-size: 45px;
     margin-top: 5px;
     color: var(--colour-primary);
 }
@@ -162,7 +162,7 @@ html, body {
 .hero .icon {
     position: absolute;
     color: var(--colour-bg-dark);
-    font-size: 3rem;
+    font-size: 2.8rem;
     opacity: 0.9;
 }
 @media (max-width: 768px) {
@@ -173,7 +173,7 @@ html, body {
         /* height: calc(100vh - 70px); */
     }
     .hero .names {
-        font-size: calc(60px + 2vw);
+        font-size: calc(50px + 2vw);
         padding: 20px 0 20px 0;
     }
     .hero .hero-icon {
@@ -205,18 +205,18 @@ html, body {
         transform: rotate(16deg);
     }
     .hero .hero-date {
-        font-size: calc(30px + 2vw);
+        font-size: calc(26px + 2vw);
         margin-top: 20px;
     }
     .hero .hero-place {
-        font-size: calc(30px + 2vw);
+        font-size: calc(26px + 2vw);
     }
 }
 
 /* Section titles */
 .section-title {
     font-family: var(--font-serif);
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 600;
     text-align: center;
     margin-bottom: 2rem;
@@ -256,24 +256,24 @@ html, body {
 }
 .sched-item h3 {
     font-family: var(--font-serif);
-    font-size: 26px;
+    font-size: 24px;
     margin: 0 0 5px;
 }
 .sched-item .time {
     font-family: var(--font-serif);
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     margin: 0;
 }
 .sched-item .subtitle {
     font-style: italic;
-    font-size: 26px;
+    font-size: 24px;
     margin-top: 4px;
 }
 .schedule-grid .diamond {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     color: var(--colour-primary);
 }
 .schedule-grid .diamond.diamond-xs {
@@ -282,7 +282,7 @@ html, body {
 .schedule-grid .diamond::before {
     content: '\2734'; /* four pointed star/dot as diamond */
     font-family: 'Times New Roman', serif;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 .hidden {
     display: none;
@@ -347,12 +347,12 @@ html, body {
 .venue h2 {
     font-family: var(--font-serif);
     font-weight: 300;
-    font-size: 45px;
+    font-size: 42px;
     margin-top: 0;
     margin-bottom: 10px;
 }
 .venue .address {
-    font-size: 26px;
+    font-size: 24px;
     margin-bottom: 30px;
     line-height: 1.4;
 }
@@ -404,7 +404,7 @@ html, body {
     font-family: var(--font-serif);
     font-style: italic;
     font-weight: 600;
-    font-size: clamp(2rem, 6vw, 2.4rem);
+    font-size: clamp(1.8rem, 6vw, 2.2rem);
     margin: 0 10px;
 }
 .quote .diamond {
@@ -414,7 +414,7 @@ html, body {
 .quote .diamond::before {
     content: '\2734'; /* four pointed star/dot as diamond */
     font-family: 'Times New Roman', serif;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 /* .quote .diamond:last-of-type {
     margin-top: 50px;
@@ -442,7 +442,7 @@ html, body {
     margin: 0 auto;
 }
 .about p {
-    font-size: 26px;
+    font-size: 24px;
     text-align: center;
     margin-bottom: 60px;
     margin-top: 0;
@@ -499,13 +499,13 @@ html, body {
 }
 .info-card h3 {
     font-family: var(--font-serif);
-    font-size: 38px;
+    font-size: 36px;
     font-weight: 600;
     margin-top: 0;
 }
 .info-card p {
     margin-bottom: 1rem;
-    font-size: 26px;
+    font-size: 24px;
 }
 .transport {
     background: var(--colour-bg-light);
@@ -523,7 +523,7 @@ html, body {
 }
 .info-card .iban {
     font-family: var(--font-serif);
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 500;
 }
 .info-card > p {
@@ -552,7 +552,7 @@ html, body {
     border: 2px solid var(--colour-primary);
     padding: 8px 18px;
     font-family: var(--font-serif);
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     cursor: pointer;
     border-radius: 30px;
     transition: background 0.2s;
@@ -607,14 +607,14 @@ html, body {
 .playlist-section h3 {
     font-style: italic;
     font-family: var(--font-serif);
-    font-size: 38px;
+    font-size: 36px;
     font-weight: 600;
     margin-bottom: 10px;
     margin-top: 0;
 }
 .playlist-section p {
     margin-bottom: 20px;
-    font-size: 26px;
+    font-size: 24px;
     padding: 0 10px;
 }
 .playlist-section iframe {
@@ -641,7 +641,7 @@ html, body {
     text-align: center;
     padding: 20px;
     font-family: var(--font-serif);
-    font-size: 29px;
+    font-size: 26px;
 }
 
 @media (max-width: 768px) {
@@ -675,14 +675,14 @@ html, body {
 .count-item span {
     display: block;
     font-family: var(--font-serif);
-    font-size: 32px;
+    font-size: 30px;
     font-weight: 600;
 }
 .count-item small {
-    font-size: 32px;
+    font-size: 30px;
 }
 .countdown-section .contacts {
-    font-size: 32px;
+    font-size: 30px;
     font-family: var(--font-serif);
     color: var(--colour-primary);
 }
@@ -697,7 +697,7 @@ html, body {
         padding: 50px 15px;
     }
     .gratitude {
-        font-size: 32px;
+        font-size: 30px;
     }
 }
 @media (max-width: 768px) {
@@ -717,11 +717,11 @@ html, body {
      }
      .top-bar h1, h2 {
         margin: 0;
-        font-size: 22px;
+        font-size: 20px;
      }
 
     .hero .icon {
-        font-size: 2.4rem;
+        font-size: 2.2rem;
     }
 }
 
@@ -737,7 +737,7 @@ html, body {
     border: none;
     border-radius: 50%;
     transition: background-color 0.2s;
-    font-size: 20px;
+    font-size: 18px;
     padding: 10px;
     width: 45px;
     height: 45px;
