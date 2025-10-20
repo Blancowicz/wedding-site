@@ -114,7 +114,7 @@ html, body {
     font-family: var(--font-serif);
     font-size: 170px;
     font-weight: 400;
-    padding: 120px 0;
+    padding: 120px 0 30px 0;
 }
 .hero .divider {
     margin: 0 15px;
@@ -147,13 +147,13 @@ html, body {
 .hero .hero-date {
     font-family: var(--font-serif);
     font-weight: 500;
-    font-size: 60px;
-    margin-top: 5px;
+    font-size: 50px;
+    margin-top: 25px;
 }
 .hero .hero-place {
     font-family: var(--font-serif);
     font-weight: 500;
-    font-size: 60px;
+    font-size: 50px;
     margin-top: 5px;
     color: var(--colour-primary);
 }
@@ -247,12 +247,12 @@ html, body {
 .sched-item:nth-child(1),
 .sched-item:nth-child(5)
  {
-    justify-self: end;  /* aligns to the left */
+    /* justify-self: end; */
 }
 
 .sched-item:nth-child(7),
 .sched-item:nth-child(3) {
-    justify-self: start;    /* aligns to the right */
+    /* justify-self: start; */
 }
 .sched-item h3 {
     font-family: var(--font-serif);
@@ -379,7 +379,7 @@ html, body {
 @media (max-width: 864px) {
     .venue {
         flex-direction: column;
-        padding: 40px 0;
+        padding: 10px 0;
     }
     .venue > div:first-child {
         margin-bottom: 20px;
@@ -525,6 +525,9 @@ html, body {
     font-family: var(--font-serif);
     font-size: 26px;
     font-weight: 500;
+}
+.info-card > p {
+    text-decoration: none;
 }
 #iban-input {
     display: none;
