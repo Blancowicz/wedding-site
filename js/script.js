@@ -34,9 +34,6 @@
     const deviceOS = isAndroid ? 'android' : (isIOS ? 'ios' : 'other');
     // Example: console.log('Device OS:', deviceOS);
 
-
-    document.getElementById('download-dots').setAttribute('href', isIOS ? 'https://apps.apple.com/es/app/dots-memories-%C3%A1lbum-de-fotos/id6449039420' : 'https://play.google.com/store/apps/details?id=social.onelife&hl=es&pli=1')
-
     let audio = document.getElementById('background-audio');
     let playButton = document.getElementById('audio-button');
 
